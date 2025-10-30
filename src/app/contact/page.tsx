@@ -3,15 +3,13 @@ import Link from 'next/link';
 export default function Contact() {
   return (
     <div id="contactPageContainer">
-      <div id="fb-root"></div>
-      <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v23.0"></script>
       <header>
         <nav>
-            <div className="navbar-container">
-              <div className="navbar-logo-container">
-                <Link href="/">
-                  <img src="../StreetKnitsLogo4.svg" alt="Streetknits Logo" className="navbar-logo-image" />
-                </Link>
+          <div className="navbar-container">
+            <div className="navbar-logo-container">
+              <Link href="/">
+                <img src="/StreetKnitsLogo4.svg" alt="StreetKnits logo" className="navbar-logo-image"/>
+              </Link>
                 <Link href="/">
                   <span className="navbar-logo-text">StreetKnits</span>
                 </Link>
@@ -49,7 +47,7 @@ export default function Contact() {
                   Check out the feed from our Facebook page down below. Feel free to like, comment, and share!
                 </p>
         </section>
-        
+
         <section id="contactPageCloud4Container" className="cloudScalableVectorGraphicContainer">
           <img src= "cloud4.svg" alt="cloud"/>
             <iframe
@@ -58,6 +56,8 @@ export default function Contact() {
             height={800}
             />
         </section>
+
+
       </main>
 
       <footer>

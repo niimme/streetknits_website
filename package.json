@@ -1,16 +1,22 @@
 {
+
+  "homepage": "https://github.com/Nicholas-Immenschuh/streetknits_website",
   "name": "streetknits_website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@paypal/react-paypal-js": "^8.8.3",
+    "gh": "^2.8.9",
     "next": "^15.3.2",
+    "pages": "^0.0.16",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

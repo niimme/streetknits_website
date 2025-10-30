@@ -1,20 +1,27 @@
 import Link from 'next/link';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div id="homePageContainer">
       <header>
         <nav>
-          <Link href="/">
-            <img src="../StreetKnitsLogo4.svg" alt="Streetknits Logo"/>
-          </Link>
-          <Link href="/">StreetKnits</Link>
-          <Link href="/donate">Donate</Link>
-          <Link href="/contact">Contact</Link>
+            <div className="navbar-container">
+              <div className="navbar-logo-container">
+                <Link href="/">
+                  <img src="../StreetKnitsLogo4.svg" alt="Streetknits Logo" className="navbar-logo-image"/>
+                </Link>
+                <Link href="/">
+                  <span className="navbar-logo-text" id="homePageNavBarStreetKnitsText">StreetKnits</span>
+                </Link>
+              </div>
+              <div className="navbar-links">
+                <Link href="/donate">Donate</Link>
+                <Link href="/contact">Contact</Link>
+              </div>
+            </div>
         </nav>
       </header>
-      
-x
+
       <main id="homePageBackgroundContainer">
         <article>
           <section>
@@ -31,7 +38,7 @@ x
       </main>
 
       <footer>
-            <p>A website redesign by Nicholas Immenschuh</p>
+            <p> A website redesign by Nicholas Immenschuh</p>
       </footer>
       
     </div>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Donate() {
+export default function DonatePage() {
   return (
     <div id="donatePageContainer">
       <header>
@@ -42,7 +42,7 @@ export default function Donate() {
             </section>
           
             <section id="donateSignContainer">
-                <img src= "../donateSign3.svg" alt="sign"/>
+                <img src= "../donateSign4.svg" alt="sign"/>
                 <table>
                     <caption>
                       Donations
