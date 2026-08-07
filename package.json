@@ -1,22 +1,24 @@
 {
 
-  "homepage": "http://Nicholas-Immenschuh.github.io/streetknits_website",
-
   "name": "streetknits_website",
 
   "version": "0.1.0",
 
   "private": true,
 
+  "engines": {
+
+    "node": "20.x",
+
+    "npm": "10.x"
+
+  },
+
   "scripts": {
 
     "dev": "next dev --turbopack",
 
     "build": "next build",
-
-    "predeploy": "npm run build",
-
-    "deploy": "gh-pages -d build",
 
     "start": "next start",
 
@@ -28,11 +30,7 @@
 
     "@paypal/react-paypal-js": "^8.8.3",
 
-    "gh": "^2.8.9",
-
     "next": "^15.3.2",
-
-    "pages": "^0.0.16",
 
     "react": "^19.0.0",
 
@@ -55,8 +53,6 @@
     "eslint": "^9",
 
     "eslint-config-next": "15.2.3",
-
-    "gh-pages": "^6.3.0",
 
     "tailwindcss": "^4",
 
