@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function DonatePage() {
@@ -8,7 +9,7 @@ export default function DonatePage() {
             <div className="navbar-container">
               <div className="navbar-logo-container">
                 <Link href="/">
-                  <img src="../StreetKnitsLogo4.svg" alt="Streetknits Logo" className="navbar-logo-image"/>
+                  <Image src="/StreetKnitsLogo4.svg" alt="Streetknits Logo" className="navbar-logo-image" width={48} height={48} />
                 </Link>
                 <Link href="/">
                   <span className="navbar-logo-text">StreetKnits</span>
@@ -25,7 +26,7 @@ export default function DonatePage() {
       <main>
           <article>
             <section id="donatePageCloud1Container" className="cloudScalableVectorGraphicContainer">
-                <img src= "cloud1.svg" alt="cloud"/>
+                <Image src="/cloud1.svg" alt="cloud" width={120} height={80} />
                   <p>
                   We are a community of knitters who want to help keep people safe and warm during the winter. 
                   Would you like to join us? Donating knitted goods is a great place to start!
@@ -33,7 +34,7 @@ export default function DonatePage() {
             </section>
 
             <section id="donatePageCloud2Container" className="cloudScalableVectorGraphicContainer">
-                <img src= "cloud2.svg" alt="cloud"/>
+                <Image src="/cloud2.svg" alt="cloud" width={120} height={80} />
                 <p>
                   Send StreetKnits an email if you would like to mail knitwear or yarn. 
                   Also, if you are short on time and knitting supplies and prefer to donate in another way, 
@@ -42,7 +43,7 @@ export default function DonatePage() {
             </section>
           
             <section id="donateSignContainer">
-                <img src= "../donateSign4.svg" alt="sign"/>
+                <Image src="/donateSign4.svg" alt="sign" width={160} height={160} />
                 <table>
                     <caption>
                       Donations
@@ -117,7 +118,7 @@ export default function DonatePage() {
                     </tr>
                   </tbody>
                 </table>
-                <h1>Venmo: "accountName"</h1>
+                <h1>Venmo: &quot;accountName&quot;</h1>
             </section>
         </article>
       </main>

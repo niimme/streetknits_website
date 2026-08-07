@@ -1,6 +1,5 @@
 import './globals.css';
 import { Metadata } from 'next/types';
-import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {

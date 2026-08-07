@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function HomePage() {
@@ -8,7 +9,7 @@ export default function HomePage() {
             <div className="navbar-container">
               <div className="navbar-logo-container">
                 <Link href="/">
-                  <img src="../StreetKnitsLogo4.svg" alt="Streetknits Logo" className="navbar-logo-image"/>
+                  <Image src="/StreetKnitsLogo4.svg" alt="Streetknits Logo" className="navbar-logo-image" width={48} height={48} />
                 </Link>
                 <Link href="/">
                   <span className="navbar-logo-text" id="homePageNavBarStreetKnitsText">StreetKnits</span>
