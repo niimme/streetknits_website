@@ -1,47 +1,45 @@
-import Image from 'next/image';
+import React from 'react';
 import Link from 'next/link';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import { getAssetPath } from '@/lib/assets';
 
 export default function HomePage() {
+  const bgImage = getAssetPath('/homePageBackground39.svg');
+
   return (
     <div id="homePageContainer">
-      <header>
-        <nav>
-            <div className="navbar-container">
-              <div className="navbar-logo-container">
-                <Link href="/">
-                  <Image src="/StreetKnitsLogo4.svg" alt="Streetknits Logo" className="navbar-logo-image" width={48} height={48} />
-                </Link>
-                <Link href="/">
-                  <span className="navbar-logo-text" id="homePageNavBarStreetKnitsText">StreetKnits</span>
-                </Link>
-              </div>
-              <div className="navbar-links">
-                <Link href="/donate">Donate</Link>
-                <Link href="/contact">Contact</Link>
-              </div>
-            </div>
-        </nav>
-      </header>
+      <Navbar />
 
-      <main id="homePageBackgroundContainer">
-        <article>
+      <main
+        className="home-main-section"
+        style={{ backgroundImage: `url("${bgImage}")` }}
+      >
+        <article className="home-content-card">
           <section>
-            <h1>About Us</h1>
-            <p>
-                StreetKnits is a humanitarian knitting charity dedicated to warming bodies and hearts.
-                Since 2013, StreetKnits is the passion and perpetual project of founder Silke Feltz,
-                who aims not only to keep her neighbors warm, but also to help students, teachers, 
-                and members of the community to find their knitting zen.
-                Currently, StreetKnits operates from Norman, Oklahoma.
+            <h1 className="home-title">About Us</h1>
+            <p className="home-description">
+              StreetKnits is a humanitarian knitting charity dedicated to warming
+              bodies and hearts. Since 2013, StreetKnits is the passion and perpetual
+              project of founder Silke Feltz, who aims not only to keep her neighbors
+              warm, but also to help students, teachers, and members of the community
+              to find their knitting zen. Currently, StreetKnits operates from Norman,
+              Oklahoma.
             </p>
+
+            <div className="home-cta-group">
+              <Link href="/donate" className="btn-primary">
+                Support & Donate
+              </Link>
+              <Link href="/contact" className="btn-secondary">
+                Get In Touch
+              </Link>
+            </div>
           </section>
         </article>
       </main>
 
-      <footer>
-            <p> A website redesign by Nicholas Immenschuh</p>
-      </footer>
-      
+      <Footer backgroundColor="var(--color-meadow-light)" />
     </div>
   );
 }
