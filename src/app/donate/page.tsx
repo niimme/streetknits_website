@@ -171,7 +171,7 @@ export default function DonatePage() {
         </div>
       </main>
 
-      <Footer backgroundColor="var(--color-meadow-light)" />
+      <Footer backgroundColor="var(--color-sky-blue)" />
     </div>
   );
 }
