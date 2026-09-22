@@ -456,7 +456,7 @@ img {
   justify-content: center;
   padding: 0;
   width: 100%;
-  max-width: 520px;
+  max-width: 530px;
   margin: 0 auto;
   transition: transform 0.25s ease;
 }
@@ -469,67 +469,187 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.08));
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.09));
   pointer-events: none;
 }
 
-/* Sized strictly within the safe inner puff of the cloud SVGs */
+/* Sized safely within the interior lobes of the cloud SVGs */
 .cloud-card-inner {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 62%;
-  max-width: 350px;
-  max-height: 56%;
+  width: 66%;
+  max-width: 370px;
+  max-height: 60%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.25rem 0.5rem;
+  padding: 0.35rem 0.5rem;
   pointer-events: auto;
-  overflow: hidden;
   box-sizing: border-box;
 }
 
-.cloud-text-welcome {
-  color: var(--color-coral);
-  font-size: clamp(0.78rem, 1.25vw, 0.98rem);
-  font-weight: 500;
-  line-height: 1.36;
-  margin: 0;
-}
-
-.cloud-email-title {
-  font-family: var(--font-typewriter);
-  color: var(--color-lavender);
-  font-size: clamp(1.1rem, 2vw, 1.55rem);
-  margin: 0 0 0.2rem 0;
-  line-height: 1.1;
-}
-
-.cloud-email-address {
+/* Category Badges */
+.cloud-badge {
+  display: inline-block;
   font-family: var(--font-body);
-  color: var(--color-teal-dark);
-  font-size: clamp(0.78rem, 1.3vw, 1rem);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 2px 10px;
+  border-radius: 9999px;
+  margin-bottom: 0.25rem;
+}
+
+.cloud-badge-coral {
+  background-color: rgba(241, 137, 76, 0.15);
+  color: #D35230;
+}
+
+.cloud-badge-teal {
+  background-color: rgba(137, 183, 183, 0.22);
+  color: #1A6366;
+}
+
+.cloud-badge-lavender {
+  background-color: rgba(198, 145, 170, 0.2);
+  color: #694879;
+}
+
+.cloud-badge-pink {
+  background-color: rgba(244, 155, 173, 0.22);
+  color: #BA335D;
+}
+
+/* Charming Typewriter Headings */
+.cloud-card-heading {
+  font-family: var(--font-typewriter);
+  font-size: clamp(1.15rem, 2.1vw, 1.48rem);
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 0.35rem 0;
+  letter-spacing: -0.3px;
+}
+
+.cloud-heading-coral {
+  color: #C84928;
+}
+
+.cloud-heading-teal {
+  color: #17585B;
+}
+
+.cloud-heading-lavender {
+  color: #5E3C6E;
+}
+
+.cloud-heading-pink {
+  color: #AF2954;
+}
+
+/* Crisp, Warm, High-Contrast Body Text */
+.cloud-card-text {
+  font-family: var(--font-body);
+  color: #2D3E4E;
+  font-size: clamp(0.82rem, 1.28vw, 0.96rem);
+  font-weight: 450;
+  line-height: 1.44;
+  margin: 0 0 0.45rem 0;
+}
+
+/* Action Button Rows inside Clouds */
+.cloud-actions-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.15rem;
+}
+
+.cloud-action-btn {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #17585B;
+  background-color: rgba(137, 183, 183, 0.25);
+  padding: 0.3rem 0.85rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cloud-action-btn:hover {
+  background-color: #17585B;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.cloud-venmo-btn {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #008CFF;
+  padding: 0.3rem 0.85rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  box-shadow: 0 2px 6px rgba(0, 140, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.cloud-venmo-btn:hover {
+  background-color: #0074D9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 140, 255, 0.45);
+}
+
+.venmo-mini-v {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+/* Interactive Email Pill in Contact Cloud 2 */
+.cloud-email-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background: #20686C;
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: clamp(0.78rem, 1.25vw, 0.95rem);
   font-weight: 600;
-  text-decoration: underline;
+  padding: 0.4rem 1.15rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(32, 104, 108, 0.28);
+  transition: all 0.2s ease;
   word-break: break-all;
-  line-height: 1.25;
-  transition: color 0.2s ease;
 }
 
-.cloud-email-address:hover {
-  color: #1A3E3E;
+.cloud-email-btn:hover {
+  background: #154A4D;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(32, 104, 108, 0.38);
+  color: #FFFFFF;
 }
 
-.cloud-text-facebook-intro {
-  color: #D96A88;
-  font-size: clamp(0.78rem, 1.25vw, 0.98rem);
-  font-weight: 500;
-  line-height: 1.36;
-  margin: 0;
+.email-btn-icon {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 /* Facebook Feed Card */
@@ -633,22 +753,6 @@ img {
   gap: 2.25rem 2rem;
   align-items: center;
   margin-bottom: 3.5rem;
-}
-
-.donate-cloud-p1 {
-  color: #D96A88;
-  font-size: clamp(0.78rem, 1.25vw, 0.98rem);
-  font-weight: 500;
-  line-height: 1.36;
-  margin: 0;
-}
-
-.donate-cloud-p2 {
-  color: #2F6363;
-  font-size: clamp(0.78rem, 1.25vw, 0.98rem);
-  font-weight: 500;
-  line-height: 1.36;
-  margin: 0;
 }
 
 /* Wooden Hanging Sign Card for Donations Table */
@@ -767,23 +871,104 @@ img {
 /* Venmo Callout inside Sign */
 .venmo-callout-card {
   background: #FFFFFF;
-  border-radius: 16px;
-  padding: 1.25rem;
+  border-radius: 20px;
+  padding: 1.6rem 1.75rem;
   text-align: center;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   border: 2px solid #E2ECF0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.venmo-header-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.venmo-badge-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #008CFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 140, 255, 0.3);
 }
 
 .venmo-callout-title {
   font-family: var(--font-typewriter);
-  font-size: clamp(1.2rem, 2.5vw, 1.75rem);
+  font-size: clamp(1.3rem, 2.5vw, 1.85rem);
   color: #008CFF;
-  margin-bottom: 0.25rem;
+  margin: 0;
+  letter-spacing: -0.3px;
 }
 
 .venmo-callout-description {
-  font-size: clamp(0.9rem, 1.6vw, 1.05rem);
-  color: #556677;
+  font-size: clamp(0.92rem, 1.6vw, 1.08rem);
+  color: #4A5B6C;
+  line-height: 1.55;
+  max-width: 580px;
+  margin: 0;
+}
+
+.venmo-btn-container {
+  margin-top: 0.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-venmo-main {
+  background-color: #008CFF;
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: clamp(0.98rem, 1.8vw, 1.15rem);
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  box-shadow: 0 4px 14px rgba(0, 140, 255, 0.35);
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-venmo-main:hover {
+  background-color: #0074D9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 140, 255, 0.45);
+  color: #FFFFFF;
+}
+
+.btn-venmo-main:active {
+  transform: translateY(0);
+}
+
+.venmo-v-symbol {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.venmo-btn-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.btn-venmo-main:hover .venmo-btn-arrow {
+  transform: translateX(4px);
 }
 
 @media (max-width: 860px) {
@@ -794,29 +979,23 @@ img {
   }
 
   .cloud-card {
-    max-width: 440px;
+    max-width: 470px;
   }
 
   .cloud-card-inner {
-    width: 64%;
-    max-height: 60%;
+    width: 66%;
+    max-height: 62%;
   }
 
-  .cloud-text-welcome,
-  .cloud-text-facebook-intro,
-  .donate-cloud-p1,
-  .donate-cloud-p2 {
-    font-size: clamp(0.75rem, 3vw, 0.92rem);
-    line-height: 1.34;
+  .cloud-card-heading {
+    font-size: clamp(1.1rem, 3.8vw, 1.35rem);
+    margin-bottom: 0.25rem;
   }
 
-  .cloud-email-title {
-    font-size: clamp(1.15rem, 4.5vw, 1.5rem);
-    margin-bottom: 0.2rem;
-  }
-
-  .cloud-email-address {
-    font-size: clamp(0.76rem, 3vw, 0.92rem);
+  .cloud-card-text {
+    font-size: clamp(0.78rem, 2.8vw, 0.92rem);
+    line-height: 1.38;
+    margin-bottom: 0.35rem;
   }
 }
 
@@ -830,30 +1009,47 @@ img {
   }
 
   .cloud-card {
-    max-width: 360px;
+    max-width: 370px;
   }
 
   .cloud-card-inner {
-    width: 65%;
-    max-height: 62%;
-    padding: 0.15rem 0.25rem;
+    width: 68%;
+    max-height: 64%;
+    padding: 0.2rem 0.3rem;
   }
 
-  .cloud-text-welcome,
-  .cloud-text-facebook-intro,
-  .donate-cloud-p1,
-  .donate-cloud-p2 {
-    font-size: clamp(0.72rem, 3.2vw, 0.82rem);
-    line-height: 1.28;
-  }
-
-  .cloud-email-title {
-    font-size: 1.1rem;
+  .cloud-badge {
+    font-size: 0.65rem;
+    padding: 1px 8px;
     margin-bottom: 0.15rem;
   }
 
-  .cloud-email-address {
-    font-size: 0.72rem;
+  .cloud-card-heading {
+    font-size: 1.05rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .cloud-card-text {
+    font-size: 0.76rem;
+    line-height: 1.32;
+    margin-bottom: 0.25rem;
+  }
+
+  .cloud-action-btn,
+  .cloud-venmo-btn {
+    font-size: 0.74rem;
+    padding: 0.25rem 0.65rem;
+  }
+
+  .cloud-email-btn {
+    font-size: 0.74rem;
+    padding: 0.35rem 0.85rem;
+  }
+
+  .btn-venmo-main {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.65rem 1.25rem;
   }
 }
 

@@ -29,10 +29,14 @@ export default function ContactPage() {
               priority
             />
             <div className="cloud-card-inner">
-              <p className="cloud-text-welcome">
-                Thank you for taking the time to visit our website, we really
-                appreciate it. If you would like to contact StreetKnits, please
-                email us and we will respond promptly.
+              <span className="cloud-badge cloud-badge-coral">Welcome</span>
+              <h2 className="cloud-card-heading cloud-heading-coral">
+                Warm Welcome
+              </h2>
+              <p className="cloud-card-text">
+                Thank you for visiting StreetKnits! If you have questions about
+                volunteering, donating handmade knitwear, or our mission, we would
+                love to hear from you.
               </p>
             </div>
           </section>
@@ -48,13 +52,17 @@ export default function ContactPage() {
               priority
             />
             <div className="cloud-card-inner">
-              <h2 className="cloud-email-title">Email:</h2>
+              <span className="cloud-badge cloud-badge-lavender">Direct Email</span>
+              <h2 className="cloud-card-heading cloud-heading-lavender">
+                Send Us an Email
+              </h2>
               <a
                 href="mailto:streetknits2013@gmail.com"
-                className="cloud-email-address"
+                className="cloud-email-btn"
                 title="Send an email to StreetKnits"
               >
-                streetknits2013@gmail.com
+                <span className="email-btn-icon" aria-hidden="true">✉</span>
+                <span className="email-btn-text">streetknits2013@gmail.com</span>
               </a>
             </div>
           </section>
@@ -69,9 +77,13 @@ export default function ContactPage() {
               className="cloud-svg-background"
             />
             <div className="cloud-card-inner">
-              <p className="cloud-text-facebook-intro">
-                Check out the feed from our Facebook page down below. Feel free
-                to like, comment, and share our latest knitting updates!
+              <span className="cloud-badge cloud-badge-pink">Community</span>
+              <h2 className="cloud-card-heading cloud-heading-pink">
+                Facebook Updates
+              </h2>
+              <p className="cloud-card-text">
+                Explore our live Facebook feed below! Like, comment, and share
+                our latest knitting workshops and winter drives with friends.
               </p>
             </div>
           </section>

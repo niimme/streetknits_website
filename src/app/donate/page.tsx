@@ -53,10 +53,14 @@ export default function DonatePage() {
               priority
             />
             <div className="cloud-card-inner">
-              <p className="donate-cloud-p1">
-                We are a community of knitters who want to help keep people safe
-                and warm during the winter. Would you like to join us? Donating
-                knitted goods is a great place to start!
+              <span className="cloud-badge cloud-badge-coral">Community</span>
+              <h2 className="cloud-card-heading cloud-heading-coral">
+                Join Our Mission
+              </h2>
+              <p className="cloud-card-text">
+                We are a community of knitters keeping neighbors safe and warm
+                every winter. Donating handmade knitwear is a wonderful place to
+                start!
               </p>
             </div>
           </section>
@@ -71,14 +75,29 @@ export default function DonatePage() {
               priority
             />
             <div className="cloud-card-inner">
-              <p className="donate-cloud-p2">
-                <Link href="/contact" style={{ textDecoration: 'underline' }}>
-                  Send StreetKnits an email
-                </Link>{' '}
-                if you would like to mail knitwear or yarn. If you prefer to
-                donate in another way, monetary contributions help us buy yarn,
-                needles, and organize local community knitting workshops.
+              <span className="cloud-badge cloud-badge-teal">Support</span>
+              <h2 className="cloud-card-heading cloud-heading-teal">
+                Ways to Give
+              </h2>
+              <p className="cloud-card-text">
+                Mail finished knitwear and yarn, or contribute directly to our
+                needle and workshop supplies fund.
               </p>
+              <div className="cloud-actions-group">
+                <Link href="/contact" className="cloud-action-btn">
+                  Mail Items &rarr;
+                </Link>
+                <a
+                  href="https://account.venmo.com/u/streetknits"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cloud-venmo-btn"
+                  title="Donate via Venmo @streetknits"
+                >
+                  <span className="venmo-mini-v" aria-hidden="true">V</span>
+                  <span>Venmo</span>
+                </a>
+              </div>
             </div>
           </section>
         </div>
@@ -115,11 +134,38 @@ export default function DonatePage() {
             </div>
 
             <div className="venmo-callout-card">
-              <h3 className="venmo-callout-title">Donate via Venmo</h3>
+              <div className="venmo-header-group">
+                <div className="venmo-badge-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                  >
+                    <path d="M19.5 2c-.6 1.3-1.8 3.5-3.3 6.1-2 3.4-4.5 7.8-6.1 11.9h-4.8c1.3-3.2 3.4-7.5 5.5-11.4 1.5-2.8 2.6-4.9 3-6.6h5.7z" />
+                  </svg>
+                </div>
+                <h3 className="venmo-callout-title">Donate via Venmo</h3>
+              </div>
               <p className="venmo-callout-description">
                 Support our seasonal yarn and workshop funds directly on Venmo:{' '}
-                <strong>@streetknits</strong> or contact us for electronic giving options.
+                <strong>@streetknits</strong>. Every contribution helps us buy needles,
+                yarn, and support shelter deliveries.
               </p>
+              <div className="venmo-btn-container">
+                <a
+                  href="https://account.venmo.com/u/streetknits"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-venmo-main"
+                  id="venmoDonateButton"
+                  aria-label="Donate to StreetKnits on Venmo"
+                >
+                  <span className="venmo-v-symbol" aria-hidden="true">V</span>
+                  <span className="venmo-btn-label">Donate with Venmo @streetknits</span>
+                  <span className="venmo-btn-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
             </div>
           </article>
         </div>
