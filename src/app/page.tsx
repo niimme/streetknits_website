@@ -8,13 +8,13 @@ export default function HomePage() {
   const bgImage = getAssetPath('/homePageBackground39.svg');
 
   return (
-    <div id="homePageContainer">
+    <div
+      id="homePageContainer"
+      style={{ backgroundImage: `url("${bgImage}")` }}
+    >
       <Navbar />
 
-      <main
-        className="home-main-section"
-        style={{ backgroundImage: `url("${bgImage}")` }}
-      >
+      <main className="home-main-section">
         <article className="home-content-card">
           <section>
             <h1 className="home-title">About Us</h1>

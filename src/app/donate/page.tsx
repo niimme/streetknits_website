@@ -30,13 +30,13 @@ export default function DonatePage() {
   const bgImage = getAssetPath('/donatePageBackground58.svg');
 
   return (
-    <div id="donatePageContainer">
+    <div
+      id="donatePageContainer"
+      style={{ backgroundImage: `url("${bgImage}")` }}
+    >
       <Navbar />
 
-      <main
-        className="donate-main-section"
-        style={{ backgroundImage: `url("${bgImage}")` }}
-      >
+      <main className="donate-main-section">
         <header className="donate-header-area">
           <h1 className="donate-main-heading">Support StreetKnits</h1>
         </header>
