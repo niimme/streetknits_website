@@ -882,25 +882,6 @@ img {
   gap: 0.75rem;
 }
 
-.venmo-header-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-}
-
-.venmo-badge-icon {
-  width: 36px;
-  height: 36px;
-  background-color: #008CFF;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFFFFF;
-  box-shadow: 0 2px 8px rgba(0, 140, 255, 0.3);
-}
-
 .venmo-callout-title {
   font-family: var(--font-typewriter);
   font-size: clamp(1.3rem, 2.5vw, 1.85rem);

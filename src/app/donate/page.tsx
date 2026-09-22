@@ -134,19 +134,7 @@ export default function DonatePage() {
             </div>
 
             <div className="venmo-callout-card">
-              <div className="venmo-header-group">
-                <div className="venmo-badge-icon" aria-hidden="true">
-                  <svg
-                    viewBox="0 0 24 24"
-                    width="22"
-                    height="22"
-                    fill="currentColor"
-                  >
-                    <path d="M19.5 2c-.6 1.3-1.8 3.5-3.3 6.1-2 3.4-4.5 7.8-6.1 11.9h-4.8c1.3-3.2 3.4-7.5 5.5-11.4 1.5-2.8 2.6-4.9 3-6.6h5.7z" />
-                  </svg>
-                </div>
-                <h3 className="venmo-callout-title">Donate via Venmo</h3>
-              </div>
+              <h3 className="venmo-callout-title">Donate via Venmo</h3>
               <p className="venmo-callout-description">
                 Support our seasonal yarn and workshop funds directly on Venmo:{' '}
                 <strong>@streetknits</strong>. Every contribution helps us buy needles,
