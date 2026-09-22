@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StreetKnits Website
+
+A modern, responsive web application for **StreetKnits** — a humanitarian knitting charity dedicated to warming bodies and hearts. Founded in 2013 by Silke Feltz and based in Norman, Oklahoma, StreetKnits unites knitters to keep neighbors safe and warm during winter and help community members discover the mindful craft of knitting.
+
+---
+
+## Features
+
+- **Cozy & Responsive Design**: Custom fluid layout optimized for mobile phones, tablets, and desktop screens.
+- **Home & Mission**: Highlights the story and mission of StreetKnits with quick links to donate and get in touch.
+- **Donation Tracker & Support**: Detailed history of knitted items donated to shelters across Minneapolis, Green Bay, and Norman from 2014 through 2025, alongside Venmo contribution info.
+- **Community Contact & Social**: Seamless email contact and responsive Facebook community timeline integration.
+- **Optimized Typography**: Self-hosted `Typewriter-Serial-Regular` font loaded via `next/font/local` with zero layout shift.
+- **Vercel Ready**: Standard Next.js configuration pre-tuned for seamless deployment on Vercel or any Node.js hosting platform.
+
+---
+
+## Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **UI Library**: [React 19](https://react.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: Vanilla CSS with modern custom properties, fluid `clamp()` typography, and responsive media queries
+- **Deployment**: [Vercel](https://vercel.com/)
+
+---
+
+## Project Structure
+
+```text
+streetknits_website/
+├── public/                     # Vector illustrations, logo, and font files
+│   ├── StreetKnitsLogo4.svg    # StreetKnits brand mark
+│   ├── cloud1.svg - cloud4.svg # Decorative cloud artwork
+│   ├── Typewriter-Serial-*.ttf # Self-hosted typewriter typography
+│   └── ...
+├── src/
+│   ├── app/
+│   │   ├── contact/page.tsx    # Contact & Facebook community page
+│   │   ├── donate/page.tsx     # Donations history and support page
+│   │   ├── globals.css         # Design tokens, typography, and responsive styles
+│   │   ├── layout.tsx          # Root layout, metadata, and font definitions
+│   │   └── page.tsx            # Home & About Us page
+│   ├── components/
+│   │   ├── Navbar.tsx          # Responsive navigation bar with mobile toggle
+│   │   └── Footer.tsx          # Site footer and charity credits
+│   └── lib/
+│       └── assets.ts           # Dynamic asset path resolution utility
+├── next.config.ts              # Next.js configuration
+├── package.json                # Dependencies and project scripts
+├── tsconfig.json               # TypeScript compiler configuration
+└── vercel.json                 # Vercel deployment configuration
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- **Node.js**: `>= 20.0.0`
+- **npm**: `>= 10.0.0`
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/niimme/streetknits_website.git
+   cd streetknits_website
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+Run the local development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create an optimized production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+To run the production server locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Linting
 
-## Deploy on Vercel
+Verify code quality with ESLint:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Deployment
+
+The project includes [`vercel.json`](vercel.json) and is ready for one-click deployment on [Vercel](https://vercel.com/):
+
+1. Import the repository into your Vercel dashboard.
+2. The framework will automatically be detected as **Next.js**.
+3. Deploy!
+
+---
+
+## Credits
+
+- **Charity**: StreetKnits (Founded by Silke Feltz, Norman, OK)
+- **Website Redesign**: Nicholas Immenschuh
