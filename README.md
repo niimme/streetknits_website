@@ -2,6 +2,8 @@
 
 A modern, responsive web application for **StreetKnits** — a humanitarian knitting charity dedicated to warming bodies and hearts. Founded in 2013 by Silke Feltz and based in Norman, Oklahoma, StreetKnits unites knitters to keep neighbors safe and warm during winter and help community members discover the mindful craft of knitting.
 
+As part of an Honors English service-learning course during my spring semester of freshman year, I worked with Streetknits, a nonprofit addressing homelessness through hand-knitted goods. I modernized the website to be more welcoming and interactive.
+
 ---
 
 ## Features
