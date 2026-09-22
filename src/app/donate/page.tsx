@@ -102,15 +102,10 @@ export default function DonatePage() {
           </section>
         </div>
 
-        {/* Hanging Sign Donations Record Card */}
-        <div className="donate-sign-outer">
-          <div className="sign-straps-row" aria-hidden="true">
-            <div className="sign-strap sign-strap-left" />
-            <div className="sign-strap sign-strap-right" />
-          </div>
-
-          <article className="sign-board-card">
-            <h2 className="sign-board-title">Donation History</h2>
+        {/* Modern Clean Donations History Card */}
+        <section className="donate-history-section" aria-label="Donation history and ways to contribute">
+          <article className="donations-card">
+            <h2 className="donations-card-title">Donation History</h2>
 
             <div className="table-responsive-wrapper">
               <table className="donations-table">
@@ -156,7 +151,7 @@ export default function DonatePage() {
               </div>
             </div>
           </article>
-        </div>
+        </section>
       </main>
 
       <Footer backgroundColor="var(--color-sky-blue)" />
