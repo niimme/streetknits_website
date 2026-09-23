@@ -93,15 +93,18 @@ img {
 /* Notched ribbon banner tail background */
 .navbar-ribbon-tail-bg {
   position: absolute;
-  inset: 0;
+  top: 3px;
+  bottom: 3px;
+  left: 0;
+  right: 0;
   background-color: #88B7B8;
   clip-path: polygon(
     0% 0%,
     100% 0%,
-    calc(100% - 22px) 50%,
+    calc(100% - 9px) 50%,
     100% 100%,
     0% 100%,
-    22px 50%
+    9px 50%
   );
   z-index: 1;
 }
@@ -110,8 +113,8 @@ img {
 .navbar-pill {
   position: relative;
   z-index: 2;
-  margin: 0 34px;
-  width: calc(100% - 68px);
+  margin: 0 14px;
+  width: calc(100% - 28px);
   height: 100%;
   background-color: #9ADEEF;
   border-radius: 9999px;
@@ -199,19 +202,21 @@ img {
   }
 
   .navbar-ribbon-tail-bg {
+    top: 2px;
+    bottom: 2px;
     clip-path: polygon(
       0% 0%,
       100% 0%,
-      calc(100% - 14px) 50%,
+      calc(100% - 7px) 50%,
       100% 100%,
       0% 100%,
-      14px 50%
+      7px 50%
     );
   }
 
   .navbar-pill {
-    margin: 0 16px;
-    width: calc(100% - 32px);
+    margin: 0 10px;
+    width: calc(100% - 20px);
     padding: 0 0.6rem 0 0.4rem;
   }
 
@@ -252,19 +257,21 @@ img {
   }
 
   .navbar-ribbon-tail-bg {
+    top: 2px;
+    bottom: 2px;
     clip-path: polygon(
       0% 0%,
       100% 0%,
-      calc(100% - 10px) 50%,
+      calc(100% - 5px) 50%,
       100% 100%,
       0% 100%,
-      10px 50%
+      5px 50%
     );
   }
 
   .navbar-pill {
-    margin: 0 10px;
-    width: calc(100% - 20px);
+    margin: 0 8px;
+    width: calc(100% - 16px);
     padding: 0 0.4rem 0 0.3rem;
   }
 
@@ -318,9 +325,14 @@ img {
 }
 
 .home-content-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.32) 50%, rgba(255, 255, 255, 0.52) 100%);
-  backdrop-filter: blur(18px) saturate(190%);
-  -webkit-backdrop-filter: blur(18px) saturate(190%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.32) 0%,
+    rgba(255, 255, 255, 0.12) 45%,
+    rgba(255, 255, 255, 0.22) 100%
+  );
+  backdrop-filter: blur(12px) saturate(160%) brightness(108%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%) brightness(108%);
   border-radius: 30px;
   padding: clamp(1.85rem, 4.2vw, 3.25rem);
   max-width: 840px;
@@ -329,13 +341,15 @@ img {
   position: relative;
   overflow: hidden;
   box-shadow:
-    0 24px 48px -12px rgba(25, 45, 60, 0.22),
-    0 8px 24px rgba(0, 0, 0, 0.08),
+    0 24px 54px -10px rgba(0, 0, 0, 0.22),
+    0 8px 20px rgba(0, 0, 0, 0.08),
     inset 0 1.5px 2px rgba(255, 255, 255, 0.95),
-    inset 0 -1.5px 2px rgba(255, 255, 255, 0.3);
-  border: 1.5px solid rgba(255, 255, 255, 0.7);
-  border-top: 2.5px solid rgba(255, 255, 255, 0.95);
-  border-left: 2px solid rgba(255, 255, 255, 0.85);
+    inset 0 -1.5px 2px rgba(255, 255, 255, 0.2),
+    inset 1.5px 0 2px rgba(255, 255, 255, 0.5),
+    inset -1.5px 0 2px rgba(255, 255, 255, 0.35);
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-top: 2px solid rgba(255, 255, 255, 0.95);
+  border-left: 2px solid rgba(255, 255, 255, 0.8);
   margin-top: auto;
   margin-bottom: 2rem;
   animation: fadeInCard 0.6s ease-out;
@@ -348,8 +362,13 @@ img {
   left: 0;
   right: 0;
   height: 48%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0) 100%);
-  border-radius: 28px 28px 90px 90px / 28px 28px 32px 32px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.32) 0%,
+    rgba(255, 255, 255, 0.04) 75%,
+    transparent 100%
+  );
+  border-radius: 28px 28px 100px 100px / 28px 28px 36px 36px;
   pointer-events: none;
 }
 
@@ -366,11 +385,11 @@ img {
 
 .home-title {
   font-family: var(--font-typewriter);
-  color: #244812;
+  color: #173B08;
   font-size: clamp(2rem, 5.5vw, 3.5rem);
   margin-bottom: 1.25rem;
   letter-spacing: -0.5px;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.95), 0 0 16px rgba(255, 255, 255, 0.75);
   position: relative;
   z-index: 1;
 }
@@ -378,13 +397,13 @@ img {
 .home-description {
   font-family: var(--font-body);
   font-size: clamp(1.05rem, 2.2vw, 1.35rem);
-  color: #1F2E3B;
-  font-weight: 500;
+  color: #11222E;
+  font-weight: 600;
   line-height: 1.75;
   margin-bottom: 2rem;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9), 0 0 10px rgba(255, 255, 255, 0.5);
   position: relative;
   z-index: 1;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
 }
 
 .home-cta-group {
