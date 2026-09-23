@@ -97,13 +97,7 @@ img {
   bottom: 3px;
   left: 0;
   right: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(136, 183, 184, 0.55) 0%,
-    rgba(136, 183, 184, 0.32) 100%
-  );
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background-color: #88B7B8;
   clip-path: polygon(
     0% 0%,
     100% 0%,
@@ -115,52 +109,19 @@ img {
   z-index: 1;
 }
 
-/* Liquid Glass Foreground Pill */
+/* Sky-blue foreground pill */
 .navbar-pill {
   position: relative;
   z-index: 2;
   margin: 0 14px;
   width: calc(100% - 28px);
   height: 100%;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.7) 0%,
-    rgba(235, 246, 252, 0.42) 45%,
-    rgba(255, 255, 255, 0.55) 100%
-  );
-  backdrop-filter: blur(24px) saturate(190%) brightness(106%);
-  -webkit-backdrop-filter: blur(24px) saturate(190%) brightness(106%);
+  background-color: #9ADEEF;
   border-radius: 9999px;
-  border: 1.5px solid rgba(255, 255, 255, 0.85);
-  border-top: 2px solid rgba(255, 255, 255, 0.95);
-  box-shadow:
-    0 10px 30px rgba(35, 60, 80, 0.12),
-    0 2px 6px rgba(0, 0, 0, 0.04),
-    inset 0 1.5px 2px rgba(255, 255, 255, 0.95),
-    inset 0 -1.5px 2px rgba(255, 255, 255, 0.25),
-    inset 1.5px 0 2px rgba(255, 255, 255, 0.6),
-    inset -1.5px 0 2px rgba(255, 255, 255, 0.4);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.25rem 0 1rem;
-}
-
-.navbar-pill::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 12px;
-  right: 12px;
-  height: 48%;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.55) 0%,
-    rgba(255, 255, 255, 0.08) 80%,
-    transparent 100%
-  );
-  border-radius: 9999px 9999px 0 0;
-  pointer-events: none;
 }
 
 .navbar-logo-container {
@@ -184,16 +145,16 @@ img {
   width: 36px;
   height: 36px;
   object-fit: contain;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.12));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
 }
 
 .navbar-logo-text {
   font-family: Avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  color: #174E61;
+  color: var(--color-text-white);
   font-size: clamp(1.2rem, 2.4vw, 1.55rem);
   font-weight: 800;
   letter-spacing: 0.2px;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.22);
 }
 
 .navbar-links {
@@ -204,33 +165,30 @@ img {
 
 .nav-link {
   font-family: Avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  color: #1B3B4B;
+  color: var(--color-text-white);
   font-size: clamp(0.95rem, 1.8vw, 1.25rem);
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   padding: 0.35rem 1rem;
   border-radius: 9999px;
   transition: all 0.2s ease;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
 .nav-link:hover {
-  background: rgba(255, 255, 255, 0.5);
-  color: #0E3340;
+  background: rgba(255, 255, 255, 0.22);
 }
 
-/* Active capsule bubble matching macOS liquid glass */
+/* Active capsule bubble matching screenshot */
 .nav-link.active {
-  background: rgba(255, 255, 255, 0.72);
-  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.95), 0 2px 8px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  color: #174E61;
+  background: rgba(255, 255, 255, 0.38);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6), 0 1px 3px rgba(0, 0, 0, 0.08);
   font-weight: 700;
   padding: 0.35rem 1.4rem;
-  text-shadow: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 /* Mobile & Tablet Responsiveness for Ribbon Navbar */
