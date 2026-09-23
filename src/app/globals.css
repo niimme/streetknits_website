@@ -389,16 +389,6 @@ img {
   z-index: 1;
 }
 
-.home-cta-group .btn-primary,
-.home-cta-group .btn-secondary {
-  box-shadow: none;
-}
-
-.home-cta-group .btn-primary:hover,
-.home-cta-group .btn-secondary:hover {
-  box-shadow: none;
-}
-
 .btn-primary, .btn-secondary {
   font-family: var(--font-typewriter);
   font-size: clamp(1rem, 2vw, 1.2rem);
@@ -415,15 +405,15 @@ img {
 }
 
 .btn-primary {
-  background-color: var(--color-meadow-green);
-  color: var(--color-text-white);
-  box-shadow: 0 4px 14px rgba(107, 137, 43, 0.4);
+  background-color: #C691AB;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(198, 145, 171, 0.45);
 }
 
 .btn-primary:hover {
-  background-color: #556E21;
+  background-color: #B57D99;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(107, 137, 43, 0.5);
+  box-shadow: 0 6px 18px rgba(198, 145, 171, 0.55);
 }
 
 .btn-secondary {
