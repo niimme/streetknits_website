@@ -83,7 +83,7 @@ img {
   position: relative;
   width: 100%;
   max-width: 1140px;
-  height: 48px;
+  height: 50px;
   display: flex;
   align-items: center;
   filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.18));
@@ -93,18 +93,18 @@ img {
 /* Notched ribbon banner tail background */
 .navbar-ribbon-tail-bg {
   position: absolute;
-  top: 3px;
-  bottom: 3px;
+  top: 6px;
+  bottom: 6px;
   left: 0;
   right: 0;
   background-color: #88B7B8;
   clip-path: polygon(
     0% 0%,
     100% 0%,
-    calc(100% - 9px) 50%,
+    calc(100% - 13px) 50%,
     100% 100%,
     0% 100%,
-    9px 50%
+    13px 50%
   );
   z-index: 1;
 }
@@ -113,8 +113,8 @@ img {
 .navbar-pill {
   position: relative;
   z-index: 2;
-  margin: 0 14px;
-  width: calc(100% - 28px);
+  margin: 0 34px;
+  width: calc(100% - 68px);
   height: 100%;
   background-color: #9ADEEF;
   border-radius: 9999px;
@@ -198,25 +198,25 @@ img {
   }
 
   .navbar-ribbon-wrapper {
-    height: 42px;
+    height: 44px;
   }
 
   .navbar-ribbon-tail-bg {
-    top: 2px;
-    bottom: 2px;
+    top: 5px;
+    bottom: 5px;
     clip-path: polygon(
       0% 0%,
       100% 0%,
-      calc(100% - 7px) 50%,
+      calc(100% - 11px) 50%,
       100% 100%,
       0% 100%,
-      7px 50%
+      11px 50%
     );
   }
 
   .navbar-pill {
-    margin: 0 10px;
-    width: calc(100% - 20px);
+    margin: 0 24px;
+    width: calc(100% - 48px);
     padding: 0 0.6rem 0 0.4rem;
   }
 
@@ -257,21 +257,21 @@ img {
   }
 
   .navbar-ribbon-tail-bg {
-    top: 2px;
-    bottom: 2px;
+    top: 4px;
+    bottom: 4px;
     clip-path: polygon(
       0% 0%,
       100% 0%,
-      calc(100% - 5px) 50%,
+      calc(100% - 9px) 50%,
       100% 100%,
       0% 100%,
-      5px 50%
+      9px 50%
     );
   }
 
   .navbar-pill {
-    margin: 0 8px;
-    width: calc(100% - 16px);
+    margin: 0 18px;
+    width: calc(100% - 36px);
     padding: 0 0.4rem 0 0.3rem;
   }
 
