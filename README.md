@@ -25,43 +25,9 @@ As part of an Honors English service-learning course during my spring semester o
 
 ---
 
-## Project Structure
-
-```text
-streetknits_website/
-├── public/                     # Vector illustrations, logo, and font files
-│   ├── StreetKnitsLogo4.svg    # StreetKnits brand mark
-│   ├── cloud1.svg - cloud4.svg # Decorative cloud artwork
-│   ├── Typewriter-Serial-*.ttf # Self-hosted typewriter typography
-│   └── ...
-├── src/
-│   ├── app/
-│   │   ├── contact/page.tsx    # Contact & Facebook community page
-│   │   ├── donate/page.tsx     # Donations history and support page
-│   │   ├── globals.css         # Design tokens, typography, and responsive styles
-│   │   ├── layout.tsx          # Root layout, metadata, and font definitions
-│   │   └── page.tsx            # Home & About Us page
-│   ├── components/
-│   │   ├── Navbar.tsx          # Responsive navigation bar with mobile toggle
-│   │   └── Footer.tsx          # Site footer and charity credits
-│   └── lib/
-│       └── assets.ts           # Dynamic asset path resolution utility
-├── next.config.ts              # Next.js configuration
-├── package.json                # Dependencies and project scripts
-├── tsconfig.json               # TypeScript compiler configuration
-└── vercel.json                 # Vercel deployment configuration
-```
-
 ---
 
-## Getting Started
-
-### Prerequisites
-
-- **Node.js**: `>= 20.0.0`
-- **npm**: `>= 10.0.0`
-
-### Installation
+## 🚀 Local Development
 
 1. Clone the repository:
    ```bash
@@ -74,8 +40,6 @@ streetknits_website/
    npm install
    ```
 
-### Development
-
 Run the local development server:
 
 ```bash
@@ -84,41 +48,3 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
 
-### Production Build
-
-Create an optimized production build:
-
-```bash
-npm run build
-```
-
-To run the production server locally:
-
-```bash
-npm run start
-```
-
-### Linting
-
-Verify code quality with ESLint:
-
-```bash
-npm run lint
-```
-
----
-
-## Deployment
-
-The project includes [`vercel.json`](vercel.json) and is ready for one-click deployment on [Vercel](https://vercel.com/):
-
-1. Import the repository into your Vercel dashboard.
-2. The framework will automatically be detected as **Next.js**.
-3. Deploy!
-
----
-
-## Credits
-
-- **Charity**: StreetKnits (Founded by Silke Feltz, Norman, OK)
-- **Website Redesign**: Nicholas Immenschuh
