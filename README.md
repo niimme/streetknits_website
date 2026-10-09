@@ -4,7 +4,7 @@ As part of an Honors English service-learning course during my spring semester o
 
 ---
 
-## Features
+## 🌟 Features
 
 - **Cozy & Responsive Design**: Custom fluid layout optimized for mobile phones, tablets, and desktop screens.
 - **Home & Mission**: Highlights the story and mission of StreetKnits with quick links to donate and get in touch.
