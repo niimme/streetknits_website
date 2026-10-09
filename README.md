@@ -20,6 +20,6 @@ As part of an Honors English service-learning course during my spring semester o
 - **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
 - **UI Library**: [React 19](https://react.dev/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: CSS
+- **Styling**: [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - **Deployment**: [Vercel](https://vercel.com/)
 
