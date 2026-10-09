@@ -6,18 +6,17 @@ As part of an Honors English service-learning course during my spring semester o
 
 ## 🌟 Features
 
-- **Cozy & Responsive Design**: Custom fluid layout optimized for mobile phones, tablets, and desktop screens.
+- **Responsive Design**: Custom fluid layout optimized for mobile phones, tablets, and desktop screens.
 - **Home & Mission**: Highlights the story and mission of StreetKnits with quick links to donate and get in touch.
 - **Donation Tracker & Support**: Detailed history of knitted items donated to shelters across Minneapolis, Green Bay, and Norman from 2014 through 2025, alongside Venmo contribution info.
-- **Community Contact & Social**: Seamless email contact and responsive Facebook community timeline integration.
-- **Optimized Typography**: Self-hosted `Typewriter-Serial-Regular` font loaded via `next/font/local` with zero layout shift.
-- **Vercel Ready**: Standard Next.js configuration pre-tuned for seamless deployment on Vercel or any Node.js hosting platform.
+- **Community Contact & Social**: Email contact and responsive Facebook community timeline integration.
+- **Typography**: `Typewriter-Serial-Regular`
 
 ---
 
 ## Tech Stack
 
-- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Framework**: [Next.js 15](https://nextjs.org/)
 - **UI Library**: [React 19](https://react.dev/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
