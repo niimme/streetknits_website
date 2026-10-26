@@ -325,18 +325,18 @@ img {
 }
 
 .home-content-card {
-  background: transparent;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  border-radius: 0;
-  padding: 0;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 28px;
+  padding: 2.5rem 2.25rem;
   max-width: 860px;
   width: 100%;
   text-align: center;
   position: relative;
   overflow: visible;
-  box-shadow: none;
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
   margin-top: auto;
   margin-bottom: 2rem;
   animation: fadeInCard 0.6s ease-out;
@@ -359,11 +359,11 @@ img {
 
 .home-title {
   font-family: var(--font-typewriter);
-  color: rgb(244, 196, 85);
+  color: #174E61;
   font-size: clamp(2.2rem, 5.5vw, 3.8rem);
   margin-bottom: 1.25rem;
   letter-spacing: -0.5px;
-  text-shadow: rgba(255, 255, 255, 0.35) 2px 3px 6px;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
   position: relative;
   z-index: 1;
 }
@@ -371,11 +371,11 @@ img {
 .home-description {
   font-family: var(--font-body);
   font-size: clamp(1.05rem, 2.2vw, 1.35rem);
-  color: rgb(244, 196, 85);
-  font-weight: 600;
+  color: #2D3E4E;
+  font-weight: 500;
   line-height: 1.75;
   margin-bottom: 2rem;
-  text-shadow: rgba(255, 255, 255, 0.35) 2px 3px 6px;
+  text-shadow: none;
   position: relative;
   z-index: 1;
 }
