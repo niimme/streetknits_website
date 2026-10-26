@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import { getAssetPath } from '@/lib/assets';
 
 export default function HomePage() {
-  const bgImage = getAssetPath('/homePageBackground39.png');
+  const bgImage = getAssetPath('/homePageBackground39.svg');
 
   return (
     <div
