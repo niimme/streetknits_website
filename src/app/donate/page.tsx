@@ -27,7 +27,7 @@ const DONATION_RECORDS: DonationRecord[] = [
 ];
 
 export default function DonatePage() {
-  const bgImage = getAssetPath('/donatePageBackground58.svg');
+  const bgImage = getAssetPath('/donatePageBackground58.png');
 
   return (
     <div
