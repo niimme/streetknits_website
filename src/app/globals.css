@@ -325,7 +325,7 @@ img {
 }
 
 .home-content-card {
-  background: rgba(23, 40, 50, 0.50);
+  background: rgba(23, 40, 50, 0.05);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border-radius: 28px;
